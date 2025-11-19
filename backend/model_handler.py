@@ -1,10 +1,7 @@
 """
-model_handler.py
-
 Model utilities for Nebras Chatbot.
 Handles model loading and response generation.
 """
-
 import os
 import torch
 import logging
@@ -128,4 +125,5 @@ def ask_chatbot(question: str) -> str:
 
     except Exception as e:
         return f"Error generating response: {e}"
+
 
