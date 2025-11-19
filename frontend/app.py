@@ -74,15 +74,15 @@ def render_chat():
 
 render_chat()
 
-# === SIDEBAR INFO ===
+# --- Sidebar ---
 with st.sidebar:
     st.header("🩺 About Nebras")
-    st.write(
-        "Nebras Chatbot is an AI medical assistant built using a fine-tuned Transformer model for medical and clinical domain tasks. "
-        "It provides short, and factual medical informations."
-    )
+    st.write("Nebras Chatbot is an AI medical assistant built using a fine-tuned Transformer model for medical tasks. Provides short, factual information.")
     st.markdown("---")
     st.info("🚨 Always verify critical medical information with a certified doctor.")
+    st.markdown("**Tips**")
+    st.markdown("- Ask one medical question at a time.")
+    st.markdown("- Avoid sharing personal identifying details.")
 
 # --- User Input Box ---
 user_input = st.chat_input("Type your medical question here...")
