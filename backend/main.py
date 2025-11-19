@@ -1,6 +1,3 @@
-#(base) C:\Users\basit>cd D:\Nebras_chatbot
-#(base) C:\Users\basit>code .
-
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
@@ -54,4 +51,5 @@ async def chat(request: ChatRequest):
         return {"response": response}
     except Exception as e:
         logging.exception("Error processing request")
+
         raise HTTPException(status_code=500, detail=f"Error generating response: {str(e)}")
